@@ -3,12 +3,11 @@ import { StyledButton } from "./styled.module"
 interface IButton {
     children: string;
     color: string;
-    onClick?: () => void;
 }
 
-const Button: React.FC<IButton> = ({ children, color, onClick }) => {
+const Button: React.FC<IButton> = ({ children, color }) => {
     return (
-        <StyledButton color={color} onClick={onClick}>{children}</StyledButton>
+        <StyledButton color={color}>{children}</StyledButton>
     )
 }
 
