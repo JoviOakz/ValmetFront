@@ -1,5 +1,6 @@
 import { StyledButtons, StyledForm, StyledInputs, StyledLogo, StyledTitle } from "./styled.module";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import Logo from "/Logo.png";
 import Input from "../Input";
 import Button from "../Button";
@@ -19,7 +20,20 @@ const RegisterForm = () => {
 
             <StyledButtons>
                 <Link to={'/'}>
-                    <Button color="#68c35a">Registrar</Button>
+                    <Button
+                        color="#68c35a"
+                        onClick={() => toast.success("Solicitação de cadastro enviado com sucesso!", {
+                            position: "top-right",
+                            autoClose: 3000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                        })}
+                    >
+                        Registrar
+                    </Button>
                 </Link>
                 <Link to={'/'}>
                     <Button color="#4b4b4a">Cancelar</Button>

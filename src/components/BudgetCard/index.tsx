@@ -30,7 +30,7 @@ const BudgetCard = () => {
                 <Link to={'/'}>
                     <Button
                         color="#68c35a"
-                        onClick={() => toast.success("Enviado com sucesso!", {
+                        onClick={() => toast.success("Orçamento enviado com sucesso!", {
                             position: "top-right",
                             autoClose: 3000,
                             hideProgressBar: false,
