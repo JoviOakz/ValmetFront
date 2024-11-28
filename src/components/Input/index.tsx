@@ -5,15 +5,13 @@ interface IInput {
     type?: string;
     value?: string;
     placeholder?: string;
-    disabled?: boolean;
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: React.FC<IInput> = ({ label, type, value, placeholder, disabled, onChange }) => {
+const Input: React.FC<IInput> = ({ label, type, value, placeholder }) => {
     return (
         <InputWrapper>
             <label>{label}</label>
-            <StyledInput type={type} value={value} placeholder={placeholder} disabled={disabled} onChange={onChange} />
+            <StyledInput type={type} value={value} placeholder={placeholder} />
         </InputWrapper>
     )
 }
