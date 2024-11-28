@@ -1,5 +1,4 @@
-import { StyledForm, StyledInputs, StyledLogo, StyledTitle } from "./styled.module";
-import { StyledButtons } from "../BudgetCard/styled.module";
+import { StyledButtons, StyledForm, StyledInputs, StyledLogo, StyledTitle } from "./styled.module";
 import { Link } from "react-router-dom";
 import Logo from "/Logo.png";
 import Input from "../Input";
@@ -19,7 +18,9 @@ const RegisterForm = () => {
             </StyledInputs>
 
             <StyledButtons>
-                <Button color="#68c35a">Registrar</Button>
+                <Link to={'/'}>
+                    <Button color="#68c35a">Registrar</Button>
+                </Link>
                 <Link to={'/'}>
                     <Button color="#4b4b4a">Cancelar</Button>
                 </Link>

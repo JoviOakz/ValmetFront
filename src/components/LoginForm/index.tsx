@@ -1,5 +1,4 @@
-import { StyledForm, StyledInputs, StyledLogo, StyledTitle } from "./styled.module";
-import { StyledButtons } from "../BudgetCard/styled.module";
+import { StyledButtons, StyledForm, StyledInputs, StyledLogo, StyledTitle } from "./styled.module";
 import { Link } from "react-router-dom";
 import Logo from "/Logo.png";
 import Input from "../Input";

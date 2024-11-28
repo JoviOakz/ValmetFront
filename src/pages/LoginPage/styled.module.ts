@@ -4,10 +4,12 @@ export const StyledLoginPage = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    gap: 105px;
     align-items: center;
 `;
 
-export const TemporaryLogo = styled.img`
-    width: 50%;
+export const Logo = styled.img`
+    width: 60%;
+    height: 100%;
 `;

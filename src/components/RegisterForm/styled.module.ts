@@ -31,3 +31,11 @@ export const StyledInputs = styled.div`
     flex-direction: column;
     gap: 1rem;
 `;
+
+export const StyledButtons = styled.div`
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px
+`;

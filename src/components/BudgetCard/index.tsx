@@ -1,6 +1,7 @@
 import { CardWrapper, StyledButtons, StyledDates, StyledDescription, StyledInformation } from "./styled.module";
 import Button from "../Button";
 import Input from "../Input";
+import { Link } from "react-router-dom";
 
 const BudgetCard = () => {
     return (
@@ -22,7 +23,9 @@ const BudgetCard = () => {
             </StyledDates>
 
             <StyledButtons>
-                <Button color="red">Cancelar</Button>
+                <Link to={'/'}>
+                    <Button color="red">Cancelar</Button>
+                </Link>
                 <Button color="#68c35a">Confirmar</Button>
             </StyledButtons>
         </CardWrapper>

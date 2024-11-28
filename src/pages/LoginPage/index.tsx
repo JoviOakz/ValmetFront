@@ -1,12 +1,12 @@
-import { StyledLoginPage, TemporaryLogo } from "./styled.module";
+import { StyledLoginPage, Logo } from "./styled.module";
 import LoginForm from "../../components/LoginForm";
-import Logo from "/Logo.png";
+import Image from "/Login.webp";
 
 const LoginPage = () => {
     return (
         <StyledLoginPage>
             <LoginForm />
-            <TemporaryLogo src={Logo} />
+            <Logo src={Image} />
         </StyledLoginPage>
     )
 }
